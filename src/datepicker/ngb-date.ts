@@ -39,6 +39,8 @@ export class NgbDate implements NgbDateStruct {
 	 *
 	 * If the `date` is already of `NgbDate` type, the method will return the same object.
 	 */
+	static from(date: NgbDateStruct): NgbDate;
+  static from(date?: NgbDateStruct | null): NgbDate | null;
 	static from(date?: NgbDateStruct | null): NgbDate | null {
 		if (date instanceof NgbDate) {
 			return date;
